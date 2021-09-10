@@ -1,13 +1,12 @@
 #nav {
   display: flex;
 height: 120px;
-background-color: #4056A1;
-color: #ffffff;
-padding: 1.5em;
+background-color: #2c4591;
+color: #f8e2e2;
+padding: 1em;
 position: fixed;
 height : 70px;
 width: 100%;
-
 }
   span {
   font-family: 'Bungee', cursive;

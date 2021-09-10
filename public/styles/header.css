@@ -8,4 +8,9 @@ header {
   background-color:chocolate;
   background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   padding-top: 1em; 
+
+}
+.dark{
+ font-weight:500;
+  font-family: 'Source Sans Pro',sans-serif;
 }
