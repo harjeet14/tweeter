@@ -7,6 +7,20 @@ textarea{
   border-left: none;
  }
 
+ 
+ 
+
+ .new-tweet{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.new-tweet form{
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+}
+
 .label{
   padding-bottom: 5px;
   margin-bottom: 5px solid black;
@@ -21,4 +35,16 @@ textarea{
   margin-top: 10px;
   margin-bottom: 50px;
   font-family: 'Bungee', cursive;
+}
+.new-tweet button{
+  
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+}
+counter{
+  padding-right:10px;
+}
+.fontRed {
+  color: red;
 }

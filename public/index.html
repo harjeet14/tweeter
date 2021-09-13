@@ -15,6 +15,16 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/d6e28486f4.js" crossorigin="anonymous"></script>
+
+
+
+  <!--app.js-->
+
+  <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 </head>
 
 <body>
@@ -35,24 +45,24 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
+
     <section id="composeButton" class="new-tweet">
+
       <h2>Compose Tweet</h2>
+
       <form class="form" id="tweet-form" action="/tweets/" method="POST">
-        <p class="errorMsg">
-          <i id="error-icon" class="fas fa-exclamation-circle"></i>
-          <span class="error-text"></span>
-          <i id="error-icon" class="fas fa-exclamation-circle"></i>
-        </p>
 
 
-        <p><label for="tweet-text">What are you humming about?</label></p>
+
+        <label for="tweet-text">What are you humming about?</label>
         <textarea class="textarea" name="text" id="tweet-text"></textarea>
         <div class="button-counter">
-          <button type="submit">Tweet</button>
+          <button class="button" type="submit">Tweet</button>
           <output name=" counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
+
   </main>
 </body>
 
