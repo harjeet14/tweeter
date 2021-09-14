@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
@@ -23,7 +24,7 @@
 
 
   <!--app.js-->
-
+  <script type="text/javascript" src="./client.js"></script>
   <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 </head>
 
@@ -31,6 +32,14 @@
   <!-- Top nav bar (fixed) -->
   <nav id="nav">
     <span>tweeter</span>
+
+    <div class="create-tweet">
+      <em> Write a new tweet</em>
+      <div>
+        <i class="fas fa-angle-double-down"></i>
+
+      </div>
+    </div>
   </nav>
   <header>
     <div>
@@ -63,6 +72,26 @@
       </form>
     </section>
 
+    <section>
+      <article class='tweet'>
+        <header>
+          <div class='user-info'>
+            <img src="https://i.imgur.com/73hZDYK.png">
+            <p>Newton</p>
+          </div>
+          <p class='username'>@SirIsaac</p>
+        </header>
+        <p class="tweet-display">If I have seen further it is by standing on the shoulders of gaints</p>
+        <footer>
+          <p>10 days ago</p>
+          <div class='tweet-icons'>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
   </main>
 </body>
 
