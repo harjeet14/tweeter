@@ -70,11 +70,13 @@ $(document).ready(function () {
 
   $('form').submit(function (event) { //form submit using jQuery
     event.preventDefault();
-    // if ($(this).find('.counter').val() < 0) {
-    //   return alert('Tweet is too long!');
-    // } else if (!$(this).find('#text-tweet').val()) {
-    //   return alert('Please enter the tweet');
-    // }
+    console.log("text-tweet:" + $(this).find('#tweet-text').val());
+    console.log("text-tweet using html:" + document.getElementById("tweet-text").value);
+    if ($(this).find('.counter').val() < 0) {
+      return alert('Tweet is too long!');
+    } else if (!$('#tweet-text').val()) {
+      return alert('Please enter the tweet');
+    }
     const data = $(this).serialize();
     $.post('/tweets', data)
       .then(function () {
