@@ -59,7 +59,7 @@ const renderTweets = function (tweets) {
   for (let tweet of tweets) {       // loops through tweets
     console.log("inside individual tweet");
     const $tweet = createTweetElement(tweet)// calls createTweetElement for each tweet
-    $('#tweets-container').append($tweet);  // takes return value and appends it to the tweets container
+    $('#tweets-container').prepend($tweet);  // takes return value and appends it to the tweets container
 
   }
 };
