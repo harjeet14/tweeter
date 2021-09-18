@@ -38,7 +38,6 @@ const createTweetElement = function (tweetData) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
   let $tweet = `<article class='tweet'>
       <header>
         <div class='user-info'>
@@ -63,7 +62,7 @@ const createTweetElement = function (tweetData) {
 const renderTweets = function (tweets) {
 
   for (let tweet of tweets) {       // loops through tweets
-
+    console.log("inside individual tweet");
     const $tweet = createTweetElement(tweet)// calls createTweetElement for each tweet
     $('#tweets-container').prepend($tweet);  // takes return value and appends it to the tweets container
 
@@ -83,9 +82,11 @@ $(document).ready(function () {
     if ($(this).find('.counter').val() < 0) {
       //return alert('Tweet is too long!');
       $('.counter-exceed').slideDown();
+      return;
     } else if (!$('#tweet-text').val()) {
       //return alert('Please enter the tweet');
       $('.empty-tweet').slideDown();
+      return;
     }
     const data = $(this).serialize();
     $.post('/tweets', data)
