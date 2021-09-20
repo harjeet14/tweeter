@@ -1,16 +1,22 @@
-header {
+header.header {
   display: flex;
-  height:600px ;
+  top: 90px;
+  height: 400px ;
   width:100%;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color:rgb(210, 192, 30);
+  z-index: 1;
+  margin-bottom: 25px;
+  position: relative;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  background-color: #00698f;
   background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-  padding-top: 1em; 
+}
 
+h2{
+ margin-top: 0;
+ font-family: 'Source Sans Pro',sans-serif;
 }
-.dark{
- font-weight:500;
-  font-family: 'Source Sans Pro',sans-serif;
-}
+
+

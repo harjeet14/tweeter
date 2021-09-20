@@ -4,12 +4,16 @@
 <head>
   <title>Tweeter Home Page</title>
   <!-- Meta Information -->
+
   <!--external css-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+
   <!--link css files-->
   <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
@@ -18,7 +22,7 @@
   <link rel="stylesheet" href="./styles/tweet.css" type="text/css" />
 
   <!-- External JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/d6e28486f4.js" crossorigin="anonymous"></script>
 
 
@@ -48,13 +52,13 @@
       </div>
     </div>
   </nav>
-  <header>
+  <header class="header">
     <div>
       <img src="/images/profile-hex.png">
     </div>
     <br>
     <div>
-      <h2>Harjeet <span class="dark">Kaur</span></h2>
+      <h2>Harjeet <span>Kaur</span></h2>
 
     </div>
   </header>
@@ -62,11 +66,11 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
 
-    <section id="composeButton" class="new-tweet">
+    <section class="new-tweet">
 
       <h2>Compose Tweet</h2>
 
-      <form class="form" id="tweet-form" action="/tweets" method="POST">
+      <form action="/tweets" method="POST">
         <p class='counter-exceed'><i class="fas fa-exclamation-triangle"></i>Tweet must be no longer than 140
           characters!</p>
         <p class='empty-tweet'><i class="fas fa-exclamation-triangle"></i>Please enter some text to post</p>
