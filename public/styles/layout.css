@@ -21,9 +21,8 @@ body {
   font-family: 'Source Sans Pro',sans-serif;
   display:flex;
   flex-direction: column;
- 
-  
 }
+
 main{
   width: 90%;
   align-self: center;
@@ -33,18 +32,19 @@ main{
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ /* tablet breakpoint is maximum width of 1024px */
  @media screen and (min-width:1024px){
   body {
     display: flex;
     flex-direction: row;
-    margin-top: 110px;
+    margin-top: 20px;
     padding: 50px;
     }
   main {
     width: 100%;
   }
   .header{
-    margin-right: 110px;
+    margin-right: 50px;
   }
   
 }

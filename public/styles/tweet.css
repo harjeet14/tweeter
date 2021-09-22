@@ -1,8 +1,7 @@
 article {
   margin: 50px 0px 50px 0px;
   border:solid 3px;
-  padding: 15px;
-  
+  padding: 20px;
 }
 
 article:hover{
@@ -13,18 +12,15 @@ article.tweet header {
   display: flex;
   justify-content:space-between;
   background-color: #f0e8dc;
- 
 }
 
 .user-info {
   display: flex;
- 
-}
+ }
 
 .user-info img {
   margin: 10px 10px 10px 0px;
-  
-}
+  }
 
 
 .username {
@@ -41,10 +37,11 @@ article.tweet footer {
   border-top: 3px solid;
   display: flex;
   justify-content: space-between;
+
 }
 
 .tweet-icons {
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .tweet-icons i {
