@@ -9,7 +9,6 @@ header.header {
   position: relative;
   flex-direction: column;
   justify-content:flex-end;
-  align-items: center;
   background-color: #00698f;
   background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }

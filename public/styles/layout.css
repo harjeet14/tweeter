@@ -21,6 +21,7 @@ body {
   font-family: 'Source Sans Pro',sans-serif;
   display:flex;
   flex-direction: column;
+  
 }
 
 main{
@@ -39,6 +40,7 @@ main{
     flex-direction: row;
     margin-top: 20px;
     padding: 50px;
+    
     }
   main {
     width: 100%;
